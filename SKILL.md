@@ -32,6 +32,13 @@ Start every run by classifying three things:
 2. Current layer: system, scenario family, or specific scenario
 3. Product branch: mobile agent OS, PC/workbench, in-car agent OS, safety-critical driving, or another explicit branch named by the user
 
+Before asking the user to choose a stage, first make the stage semantics explicit in general terms:
+
+- `Target A / Direction Framing` = clarify whether the direction should exist and where its first valid wedge is; this is the stage for problem framing, why-now/capability fit, operating constraints, and boundary judgment.
+- `Target B / Structure Convergence` = given a direction that has already passed the upstream gate, converge the collaboration structure that makes it hold together; this is the stage for flow decomposition, allocation, handoff, intervention, memory, modality, and surface consistency.
+
+Treat these as branch-independent definitions. The user's theme may be any product, agent, or collaboration topic. Branches only change which risks, constraints, and handoff patterns must be emphasized; they do not redefine `Target A` or `Target B`.
+
 If the stage is unclear, resolve the stage before expanding content.
 
 If the branch is unclear and branch choice will change risk, attention, or handoff design, resolve the branch before discussing surfaces.
@@ -43,7 +50,9 @@ Follow these rules during the run:
 - Respect the framework's doctrine-first order. Do not jump into UX structure before the upstream framing layers are stable.
 - Keep `Target A` and `Target B` separate. Do not enter `Target B` until the gate passes.
 - Ask breadth-first before depth-first. Use open questions early.
-- Use constrained options only to close an already-visible branch axis.
+- When a question is being used to classify the current stage, branch, primary problem, or another major branch axis, provide `3-5` candidate answers.
+- For candidate-answer questions, explicitly tell the user they may multi-select, but must rank the selected options by priority.
+- Use fully open questions only when the branch space is genuinely unknown or the candidate set would falsely constrain the answer.
 - Treat a case as evidence for the framework, not as the framework itself.
 - Return from a case to the map once the case has exposed the needed structure.
 - Preserve unresolved contradictions instead of smoothing them away.
@@ -118,6 +127,8 @@ Never collapse assumptions into facts or hide conflicts inside polished summary 
 Drive one layer at a time.
 
 - Ask only the sharpest questions needed for the current layer.
+- Default to `3-5` candidate answers for each sharp question when the goal is stage routing, branch selection, or upstream problem classification.
+- Add one short reminder that the user can choose multiple options, but should sort them by priority.
 - Produce a compact intermediate artifact after each meaningful round.
 - Name the current stage and gate judgment when the discussion risks drifting.
 - Refer the reader back to the source framework or spec instead of reprinting large chunks of them.
